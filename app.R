@@ -28,7 +28,8 @@ ui <- fluidPage(theme = shinytheme("darkly"),
                     width = 1000)
       )
    ),
-  fluidRow(column(width = 2, paste0('Last update: ', Sys.Date())))
+  fluidRow(column(width = 2, paste0('Last update: ', 
+                                    as.Date(file.info('data/output/travel_coords.csv')$mtime))))
 )
 
 # Define server (Output objects)
