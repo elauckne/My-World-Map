@@ -1,5 +1,7 @@
 # My World Map
 
+Retrieves GPS coordinates from place names in excel file and plots them in a Shiny App on a world map
+
 ### Tools
 * R
 * R Shiny
